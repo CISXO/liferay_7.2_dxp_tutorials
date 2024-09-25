@@ -6,8 +6,17 @@
 <%@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui"%>
 <%@ taglib uri="http://liferay.com/tld/frontend" prefix="liferay-frontend" %>
 <%@ taglib uri="http://liferay.com/tld/security" prefix="liferay-security" %>
+<%@ taglib uri="http://liferay.com/tld/asset" prefix="liferay-asset" %>
+<%@ taglib uri="http://liferay.com/tld/comment" prefix="liferay-comment" %>
 
-
+<%@ page import="com.liferay.asset.kernel.service.AssetEntryLocalServiceUtil" %>
+<%@ page import="com.liferay.asset.kernel.service.AssetTagLocalServiceUtil" %>
+<%@ page import="com.liferay.asset.kernel.model.AssetEntry" %>
+<%@ page import="com.liferay.asset.kernel.model.AssetTag" %>
+<%@ page import="com.liferay.portal.kernel.util.ListUtil" %>
+<%@ page import="com.liferay.portal.kernel.comment.Discussion" %>
+<%@ page import="com.liferay.portal.kernel.comment.CommentManagerUtil" %>
+<%@ page import="com.liferay.portal.kernel.service.ServiceContextFunction" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.liferay.portal.kernel.util.ParamUtil" %>
 <%@ page import="com.liferay.portal.kernel.util.HtmlUtil" %>
