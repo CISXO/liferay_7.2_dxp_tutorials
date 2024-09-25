@@ -30,7 +30,6 @@ import com.liferay.portal.kernel.util.PortalUtil;
 public class GuestbookAssetRenderer extends BaseJSPAssetRenderer<Guestbook>{
 
     public GuestbookAssetRenderer(Guestbook guestbook, ModelResourcePermission<Guestbook> modelResourcePermission) {
-
                 _guestbook = guestbook;
                 _guestbookModelResourcePermission = modelResourcePermission;
     }

@@ -86,4 +86,3 @@ long guestbookId = Long.valueOf((Long) renderRequest.getAttribute("guestbookId")
 <liferay-ui:search-iterator />
 
 </liferay-ui:search-container>
-
