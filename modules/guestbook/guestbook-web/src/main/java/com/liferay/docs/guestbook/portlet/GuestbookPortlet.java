@@ -82,6 +82,7 @@ public class GuestbookPortlet extends MVCPortlet {
 	
 	            response.setRenderParameter(
 	                "guestbookId", Long.toString(guestbookId));
+	            System.out.println("AddEntry" + Long.toString(guestbookId));
 	            
 	        }
 	        catch (Exception e) {
@@ -100,6 +101,7 @@ public class GuestbookPortlet extends MVCPortlet {
 
 	            response.setRenderParameter("guestbookId", Long.toString(guestbookId));
 
+	            System.out.println("edit entry");
 	            SessionMessages.add(request, "entryAdded");
 	
 	        } catch (Exception e) {
@@ -162,6 +164,8 @@ public class GuestbookPortlet extends MVCPortlet {
         }
 
         renderRequest.setAttribute("guestbookId", guestbookId);
+        
+        System.out.println("render");
     }
     catch (Exception e) {
         throw new PortletException(e);
