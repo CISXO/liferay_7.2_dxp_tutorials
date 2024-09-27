@@ -28,6 +28,7 @@ public class GuestbookEntryModelResourcePermissionRegistrar {
 
  @Activate
     public void activate(BundleContext bundleContext) {
+	 System.out.println("Permission Entry Model Activate -service");
         Dictionary<String, Object> properties = new HashMapDictionary<>();
 
         properties.put("model.class.name", GuestbookEntry.class.getName());
@@ -52,6 +53,7 @@ public class GuestbookEntryModelResourcePermissionRegistrar {
 
     @Deactivate
     public void deactivate() {
+    	System.out.println("Permission Entry Model DeActivate -service");
         _serviceRegistration.unregister();
     }
 

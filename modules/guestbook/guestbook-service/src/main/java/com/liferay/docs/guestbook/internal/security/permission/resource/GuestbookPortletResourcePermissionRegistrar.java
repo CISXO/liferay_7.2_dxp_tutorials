@@ -22,6 +22,7 @@ public class GuestbookPortletResourcePermissionRegistrar {
 
         @Activate
     public void activate(BundleContext bundleContext) {
+    	System.out.println("Permission Resource Activate -service");	
         Dictionary<String, Object> properties = new HashMapDictionary<>();
 
         properties.put("resource.name", GuestbookConstants.RESOURCE_NAME);
@@ -37,6 +38,7 @@ public class GuestbookPortletResourcePermissionRegistrar {
 
     @Deactivate
     public void deactivate() {
+    	System.out.println("Permission Resource DeActivate -service");	
         _serviceRegistration.unregister();
     }
 
